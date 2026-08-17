@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Sabor & Tradición</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="logo">Sabor & Tradición</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección Principal / Hero -->
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Gastronomía de Alta Cocina</h1>
+      <p>Sabores auténticos e ingredientes frescos seleccionados cada día.</p>
+      <a href="#reservas" class="btn-primary">Reservar Mesa</a>
+    </div>
+  </header>
+
+  <!-- Sección de Menú -->
+  <section id="menu" class="section">
+    <h2 class="section-title">Nuestra Carta</h2>
+    <div class="menu-grid">
+      
+      <div class="menu-card">
+        <h3>Entradas</h3>
+        <div class="menu-item">
+          <span>Ceviche Clásico</span>
+          <span class="price">$12.00</span>
+        </div>
+        <p>Pescado fresco marinando en limón, cebolla morada y maíz cancha.</p>
+        
+        <div class="menu-item">
+          <span>Carpaccio de Res</span>
+          <span class="price">$14.00</span>
+        </div>
+        <p>Láminas finas de lomo, alcaparras, queso parmesano y aceite de oliva.</p>
+      </div>
+
+      <div class="menu-card">
+        <h3>Platos Fuertes</h3>
+        <div class="menu-item">
+          <span>Lomo Saltado</span>
+          <span class="price">$22.00</span>
+        </div>
+        <p>Trozos de carne salteados al wok con cebolla, tomate y papas fritas.</p>
+
+        <div class="menu-item">
+          <span>Risotto de Mariscos</span>
+          <span class="price">$24.00</span>
+        </div>
+        <p>Arroz cremoso con camarones, calamares y toque de vino blanco.</p>
+      </div>
+
+      <div class="menu-card">
+        <h3>Postres & Bebidas</h3>
+        <div class="menu-item">
+          <span>Volcán de Chocolate</span>
+          <span class="price">$8.00</span>
+        </div>
+        <p>Bizcocho tibio de chocolate amargo servido con helado de vainilla.</p>
+
+        <div class="menu-item">
+          <span>Coctel de la Casa</span>
+          <span class="price">$10.00</span>
+        </div>
+        <p>Infusión artesanal con licor premium y frutas de temporada.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección de Reservas -->
+  <section id="reservas" class="section bg-light">
+    <h2 class="section-title">Haz tu Reserva</h2>
+    <form class="booking-form" onsubmit="event.preventDefault(); alert('¡Reserva enviada con éxito!');">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" required placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required>
+      </div>
+      <div class="form-group">
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" min="1" max="20" value="2" required>
+      </div>
+      <button type="submit" class="btn-primary">Confirmar Reserva</button>
+    </form>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer id="contacto">
+    <p>&copy; 2026 Restaurante Sabor & Tradición — Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
